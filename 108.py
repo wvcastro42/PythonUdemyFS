@@ -1,34 +1,34 @@
 # -*- coding: utf-8 -*-
 #INHERITANCE
-class Animal():
-
-    def __init__(self):
-        print("Animal Created")
-
-    def who_am_i(self):
-        print("Animal")
-
-    def eat(self):
-        print("Eating...")
-
-
-class Dog(Animal):
-
-    def __init__(self):
-        # Animal.__init__(self)
-        print("Dog Created!")
-
-    def bark(self):
-        print("Wooof")
-
-    def eat(self):
-        print("Dog eating")
-
-
-my_dog = Dog()
-my_dog.who_am_i()
-my_dog.eat()
-my_dog.bark()
+# class Animal():
+#
+#     def __init__(self):
+#         print("Animal Created")
+#
+#     def who_am_i(self):
+#         print("Animal")
+#
+#     def eat(self):
+#         print("Eating...")
+#
+#
+# class Dog(Animal):
+#
+#     def __init__(self):
+#         # Animal.__init__(self)
+#         print("Dog Created!")
+#
+#     def bark(self):
+#         print("Wooof")
+#
+#     def eat(self):
+#         print("Dog eating")
+#
+#
+# my_dog = Dog()
+# my_dog.who_am_i()
+# my_dog.eat()
+# my_dog.bark()
 
 
 # SPECIAL METHODS
@@ -44,5 +44,12 @@ class Book():
         """Method that return a string representation of the class book"""
         return "Title: {}, Author: {}, Pages: {}".format(self.title, self.author, self.pages)
 
+    def __len__(self):
+        return self.pages
+
+    def __del__(self):
+        print("A book is destroyed!")
+
 b = Book("Python", "José", 200)
-print(b)
+del b
+# print(len(b))
