@@ -1,0 +1,80 @@
+================== UBUNTU ================
+-ATOM
+- Udemy
+- Pomodoro
+- Chrome
+- dropbox
+- Spotify
+- Visual Studio
+- Pycharm
+- Eclipse
+
+
+
+
+=================== ATOM ===============
+Plugins:
+atom-python-run
+autocomplete-python
+magicpython 1.1.1 (magicstack)
+file-icons
+intetions
+platformio-ide-terminal
+pretty-json
+linter-pylama
+
+
+====================== GIT ==============
+
+git config --global user.name "Weverton Castro"
+git config --global user.email "wvcastro42@gmail.com
+git config --global core.editor atom
+git config --list ou git config oquedesejaver
+criar/ir na pasta onde usará o git e digitar: git init
+git status :> mostra o status do git
+
+após criar arquivo:
+git add Arquivo.extensão (staged)
+
+Quando alterar tem que dar um : git add no arquivo novamente
+
+git commit -m "Add arquivo.txt"  (parâmetro a: arquivos modificados ex.: git commit -am "mesangem de texto"
+
+
+git log / git log --decorate  / git log --author="Weverton" / git shortlog -sn / git log --graph : mostra infromações dos commits
+
+git show 445b76b20f2b921fda857a0cf29be127d03e6afb : mostra o que foi feito no commit
+
+git diff / git diff --name-only  -> boa prática antes dos commits para ver a diferença entre antes e depois
+
+
+DESFAZER:
+
+git checkout arquivo.txt :> desfaz a ultima alteração (modified/unstage - antes de add staged)
+
+git reset HEAD arquivo.txt :> volta o arquivo para modified/unstage
+
+git reset --soft --mixed --hard +HASHDOCOMMITANTERIOR AO QUE DESEJA RESETAR
+
+
+ENVIAR PARA GITHUB:
+
+git remote add origin git@github.com:wvcastro42/teste.git     +
+git push -u origin master || git push -uf fullstack master (-f = force)
+
+
+
+===================== ANACONDA 3 ======================
+
+
+export PATH=~/anaconda3/bin:$PATH (RESOLVER PROBLEMA: conda: command not found)
+
+
+======================= DJANGO ===========================
+> conda install django or
+> pip install django
+
+VErsão do DJANGO
+> django-admin.py --version
+
+django-admin startproject nome_projeto
