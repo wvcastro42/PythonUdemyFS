@@ -73,6 +73,13 @@ source activate /home/weverton/anaconda3/envs/myDjangoEnv/ (ativar o ambiente)
 
 
 ======================= DJANGO ===========================
+1º CRIAR VENV
+2º ATIVAR venv
+3º INSTALAR DJANGO==3.0.8
+4º VERIFICAR VERSÃO DJANGO / SE INSTALOU CORRETAMENTE
+5º DJANGO-ADMIN startproject nome_projeto
+6º
+
 sudo apt install python3.8-venv
 
 python manage.py startapp nome_app
@@ -90,12 +97,35 @@ VErsão do DJANGO
 
 django-admin startproject nome_projeto
 
-python manage.py runserver
-
-
-
-
-
+SUDO python manage.py runserver
 
 
 source activate /home/weverton/anaconda3/envs/myDjangoEnv/ (ativar o ambiente)
+
+
+################ URLS.PY - in project folder  ##################
+
+from django.contrib import admin
+from django.urls import path
+from first_app import views  #importe from views - in views.py (application folder)
+
+urlpatterns = [
+    path('', views.index),
+    path('aew_carai', views.aew_carai, name="birrrrrl"),  'aew_carai' (url for access) / views.aew_carai (catching method from views.py)
+    path('admin/', admin.site.urls),
+]
+
+############    MODEL OF VIEWS.PY ###############
+
+from django.http import HttpResponse
+# Create your views here.
+
+def index(request):
+    return HttpResponse("Hello World!")
+
+    def aew_carai(request):                       / always must pass a request parameter 
+    return HttpResponse("Deu certo, porra!")  / always must returns a HttpResponse
+
+############# SETTINGS ############
+
+Remember to add the app in INSTALLED_APPS
