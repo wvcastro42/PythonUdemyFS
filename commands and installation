@@ -68,13 +68,34 @@ git push -u origin master || git push -uf fullstack master (-f = force)
 
 
 export PATH=~/anaconda3/bin:$PATH (RESOLVER PROBLEMA: conda: command not found)
+conda info --envs (discovery all virtuals environment)
+source activate /home/weverton/anaconda3/envs/myDjangoEnv/ (ativar o ambiente)
 
 
 ======================= DJANGO ===========================
+sudo apt install python3.8-venv
+
+python manage.py startapp nome_app
+
+source activate (na pasta do virtualenv) // deactivate
+
+***** virtualenv venv -p python3
+
+
 > conda install django or
-> pip install django
+> pip3 install django==3.0.8
 
 VErsão do DJANGO
 > django-admin.py --version
 
 django-admin startproject nome_projeto
+
+python manage.py runserver
+
+
+
+
+
+
+
+source activate /home/weverton/anaconda3/envs/myDjangoEnv/ (ativar o ambiente)
