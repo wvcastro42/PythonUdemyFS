@@ -123,9 +123,19 @@ from django.http import HttpResponse
 def index(request):
     return HttpResponse("Hello World!")
 
-    def aew_carai(request):                       / always must pass a request parameter 
+    def aew_carai(request):                       / always must pass a request parameter
     return HttpResponse("Deu certo, porra!")  / always must returns a HttpResponse
 
 ############# SETTINGS ############
 
 Remember to add the app in INSTALLED_APPS
+
+
+python3 manage.py migrate
+python3 manage.py makemigrations
+
+python3 manage.py createsuperuser
+
+Username (leave blank to use 'weverton'):
+Email address: wvcastro42@gmail.com
+Password: 1234
