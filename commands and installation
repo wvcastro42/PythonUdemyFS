@@ -14,6 +14,8 @@
 
 =================== ATOM ===============
 Plugins:
+highlight selected
+pigment
 atom-python-run
 autocomplete-python
 magicpython 1.1.1 (magicstack)
@@ -99,7 +101,7 @@ django-admin startproject nome_projeto
 
 SUDO python manage.py runserver
 
-
+se try to insta
 source activate /home/weverton/anaconda3/envs/myDjangoEnv/ (ativar o ambiente)
 
 
@@ -132,7 +134,7 @@ Remember to add the app in INSTALLED_APPS
 
 
 python3 manage.py migrate
-python3 manage.py makemigrations
+python3 manage.py makemigrations nome_do_app
 
 python3 manage.py createsuperuser
 

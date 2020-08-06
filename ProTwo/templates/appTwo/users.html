@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% if access_fnames %}
+      <table>
+        <thead>
+          <th>First Name</th>
+        </thead>
+        {% for fname in access_fnames %}
+        <tr>
+          <td>{{acc.first_name}}</td>
+        </tr>
+        {% endfor %}
+      </table>
+      {% else %}
+      <p>No access records Found...</p>
+      {% endif %}
+  </body>
+</html>
