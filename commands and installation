@@ -21,7 +21,7 @@ autocomplete-python
 magicpython 1.1.1 (magicstack)
 file-icons
 intetions
-platformio-ide-terminal
+platformio-ide-terminal   OU  terminus 4.0.5
 pretty-json
 linter-pylama
 
