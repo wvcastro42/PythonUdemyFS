@@ -13,7 +13,7 @@
 
 
 =================== ATOM ===============
-Plugins:
+Plugins:users/
 highlight selected
 pigment
 atom-python-run
@@ -101,7 +101,7 @@ django-admin startproject nome_projeto
 
 SUDO python manage.py runserver
 
-se try to insta
+se try to instausers/
 source activate /home/weverton/anaconda3/envs/myDjangoEnv/ (ativar o ambiente)
 
 
