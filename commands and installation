@@ -32,6 +32,9 @@ git config --global user.name "Weverton Castro"
 git config --global user.email "wvcastro42@gmail.com
 git config --global core.editor atom
 git config --list ou git config oquedesejaver
+
+GERAR, COPIAR E ADD SSH KEY NO GITHUB
+
 criar/ir na pasta onde usará o git e digitar: git init
 git status :> mostra o status do git
 
