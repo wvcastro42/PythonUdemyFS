@@ -78,6 +78,8 @@ source activate /home/weverton/anaconda3/envs/myDjangoEnv/ (ativar o ambiente)
 
 
 ======================= DJANGO ===========================
+
+
 1º CRIAR VENV
 2º ATIVAR venv
 3º INSTALAR DJANGO==3.0.8
@@ -89,10 +91,10 @@ sudo apt install python3.8-venv
 
 python manage.py startapp nome_app
 
+
 source activate (na pasta do virtualenv) // deactivate
 
 ***** virtualenv venv -p python3
-
 
 > conda install django or
 > pip3 install django==3.0.8
@@ -144,3 +146,40 @@ python3 manage.py createsuperuser
 Username (leave blank to use 'weverton'):
 Email address: wvcastro42@gmail.com
 Password: 1234
+
+
+############  WORKFLOW DJANGO  ###############
+- Start project
+- Start App
+- Pasta templates
+- pasta templates/my_ap
+- criar os templates/htmls index, users, help.html etc
+- criar classe no models
+- views (import models e criar def's para cada view)
+- urls na pasta do projeto e na do app
+- make migrate -> make makemigrations -> make migrate novamente
+- importar e registrar models no admin.py
+- testar: runserver e ver se acessa o localhost
+- trabalhar nos templates(html)
+- criar super user: python manage.py createsuperuser
+- testar superuser
+- popular banco - criando script
+- verificar no admin se usuários/populate routine works
+- ir no template(users.html) e iterar lista usando a template tag(criada na views.py)
+-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.

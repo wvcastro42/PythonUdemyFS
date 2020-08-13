@@ -6,14 +6,14 @@
     <title></title>
   </head>
   <body>
-    {% if access_fnames %}
+    {% if users %}
       <table>
         <thead>
           <th>First Name</th>
         </thead>
-        {% for fname in access_fnames %}
+        {% for fname in users %}
         <tr>
-          <td>{{acc.first_name}}</td>
+          <td>{{fname.first_name}}</td>
         </tr>
         {% endfor %}
       </table>
