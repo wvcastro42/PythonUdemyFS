@@ -153,6 +153,7 @@ Password: 1234
 - Start App
 - Pasta templates
 - pasta templates/my_ap
+- add templares_dir no settings.py e no dicionário + add app
 - criar os templates/htmls index, users, help.html etc
 - criar classe no models
 - views (import models e criar def's para cada view)
