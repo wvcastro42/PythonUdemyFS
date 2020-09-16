@@ -67,6 +67,8 @@ ENVIAR PARA GITHUB:
 git remote add origin git@github.com:wvcastro42/teste.git     +
 git push -u origin master || git push -uf fullstack master (-f = force)
 
+git remote remove origin
+
 
 
 ===================== ANACONDA 3 ======================
@@ -171,7 +173,22 @@ Password: 1234
 
 
 
+################## PYENV #########################
+Setar python localmente:
 
+$ cd project1/
+$ pyenv which python
+/usr/bin/python
+$ pyenv virtualenv 3.6.8 project1
+...
+$ pyenv local project1
+$ python -V
+/home/realpython/.pyenv/versions/project1/bin/python
+
+startar venv:
+pyenv which python  - achar o caminho
+  ex: /home/wvcastro42/.pyenv/versions/myvenv/bin/python
+source /home/wvcastro42/.pyenv/versions/myvenv/bin/activate
 
 
 
