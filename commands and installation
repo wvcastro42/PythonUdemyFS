@@ -91,7 +91,7 @@ source activate /home/weverton/anaconda3/envs/myDjangoEnv/ (ativar o ambiente)
 
 sudo apt install python3.8-venv
 
-python manage.py startapp nome_app
+
 
 
 source activate (na pasta do virtualenv) // deactivate
@@ -105,7 +105,7 @@ VErsão do DJANGO
 > django-admin.py --version
 
 django-admin startproject nome_projeto
-
+python manage.py startapp nome_app
 SUDO python manage.py runserver
 
 se try to instausers/
